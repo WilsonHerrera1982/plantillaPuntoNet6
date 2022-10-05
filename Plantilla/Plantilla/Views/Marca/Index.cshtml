@@ -1,0 +1,21 @@
+﻿@model List<Plantilla.Models.Marca>
+<h1>MARCAS</h1>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                Nombre
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach(var marca in Model){
+            <tr>
+                <th>
+                    @Html.DisplayFor(m=>marca.Nombre)
+                </th>
+            </tr>
+        }
+       
+    </tbody>
+</table>
